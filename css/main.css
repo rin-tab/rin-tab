@@ -1,3 +1,60 @@
-h1{
-    background: yellow;
+body{
+    font-family: sans-serif;
+    padding: 0px;
+    margin: 0px;
+    
+}
+ul{
+    background: #808080;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+ul li{
+    list-style: none;
+    padding: 20px;
+
+}
+ul li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: ivory;
+}
+.heat{
+    background-image: url(https://s3.amazonaws.com/media.eremedia.com/wp-content/uploads/sites/4/2019/02/24111926/resume-job-search-screening-700x467.jpg);
+    width: 100%;
+    height: 450px;
+    color: #f4f8f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -1px;
+    background-size: cover;
+    flex-direction: column;
+}
+.pro{
+    margin-top: 0;
+    background-image: url(../image/rin.jpeg);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    margin: auto;
+    margin-top: -100px;
+   
+}
+img{
+    margin-top: 80%;
+    border-radius: 60%;
+    width: 60%;
+    height: 60%;
+}
+.par{
+    text-align: center;
+    padding-top: 10px;
+}
+.par p{
+    color: #ededf8;
+    text-transform: uppercase;
 }
