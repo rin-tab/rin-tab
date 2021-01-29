@@ -1,5 +1,5 @@
 body{
-    background: #3c6382cb;
+    background: #2d2e30cb;
     font-family: sans-serif;
     padding: 0px;
     margin: 0px;
@@ -9,22 +9,22 @@ body{
     position: sticky;
     top: 0;
 }
-.container ul{
+ul{
     background: #0a3d62;
     display: flex;
     margin: 0;
     padding: 0;
     align-items: center;
 }
-.container ul li{
+ul li{
     list-style: none;
     padding: 20px;
 
 }
-.container ul li a:hover{
+ul li a:hover{
     color: #797c79;
 }
-.container ul li a{
+ul li a{
     text-transform: uppercase;
     text-decoration: none;
     color: ivory;
@@ -128,12 +128,12 @@ h2{
 }
 .form{
     box-sizing: border-box;
+    background: #2c2b2b;
     border: none;
     width: 50%;
     height: 60vh;
     margin-right: 2%;
 }
-
 input[type="text"]{
     width: 40%;
     height: 30px;
