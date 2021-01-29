@@ -1,5 +1,4 @@
 body{
-    background: #2d2e30cb;
     font-family: sans-serif;
     padding: 0px;
     margin: 0px;
@@ -10,19 +9,22 @@ body{
     top: 0;
 }
 ul{
-    background: #0a3d62;
+    background: #1687a7;
     display: flex;
     margin: 0;
     padding: 0;
     align-items: center;
 }
+
+    
 ul li{
     list-style: none;
     padding: 20px;
-
+    
 }
 ul li a:hover{
-    color: #797c79;
+    color: #080808;
+    
 }
 ul li a{
     text-transform: uppercase;
@@ -58,9 +60,10 @@ ul li a{
     width: 60%;
     height: 60%;
 }
-h2{
+h1{
     margin-left: 30px;
-    color: whitesmoke;
+    color: rgb(17, 201, 247);
+    margin-bottom: 30px;
 }
 .par{
     text-align: center;
@@ -90,8 +93,8 @@ h2{
     border-radius: 20px;
 }
 .at p{
-    background: #60a3bc;
-    color: cornsilk;
+    background: #d4e2d4;
+    color: #272727;
     margin-left: 100px;
     margin-top: 0px;
     margin-right: 20px;
@@ -101,7 +104,9 @@ h2{
     align-items: center;
     padding: 10px;
     height: 280px;   
-
+}
+.at p:hover{
+    background: #a3a5a3bb;
 }
 
 .row{
@@ -128,11 +133,13 @@ h2{
 }
 .form{
     box-sizing: border-box;
-    background: #2c2b2b;
+    background: #5896a8e0;
+    border-radius: 10px;
     border: none;
     width: 50%;
     height: 60vh;
     margin-right: 2%;
+    cursor: pointer;
 }
 input[type="text"]{
     width: 40%;
@@ -162,16 +169,18 @@ input[type="submit"]{
     margin-left: 20px;
     border-radius: 25px;
     border: none;
+    background: #8cf3b7;
 }
 input[type="submit"]:hover{
-    background: blue;
-    color: wheat;
+    background: #46baf0;
+    color: #e2e0db;
 }
 
 footer{
     height: 22vh;
     margin-bottom: 0;
     bottom: 0;
+    background: rgba(17, 102, 136, 0.945);
     
 }
 nav .fa{
@@ -206,17 +215,18 @@ nav a{
     color: white;
 }
 .btn {
-    background: #a7bcf5;
+    background: #4c77ee;
     border: none;
-    padding: 12px;
+    padding: 13px;
     cursor: pointer;
     font-size: 15px;
-    width: 10%;
-    margin-left: 45%;
+    width: 20%;
+    margin-left: 40%;
+    border-radius: 5px;
   }
   
   .btn:hover {
-    background-color: #2a2af3;
+    background-color: #d4dbe9;
   }
   .column {
     float: left;
@@ -227,10 +237,22 @@ nav a{
       margin-left: 10%;
       color: cornsilk;
   }
+.h h1{
+    color: #1479ecf6;
+}
 .educat img{
     width: 97%;
     height: 300px;
     margin-top: -5px;
+}
+#Education{
+    height: 70px;
+}
+#About{
+    height: 100px;
+}
+#Contact{
+    height: 80px;
 }
 .ed{
     display: flex;
@@ -282,7 +304,7 @@ img {
   }
   
   .education {
-    background-color: white;
+    background-color: #e8eff0;
     box-sizing: border-box;
     height: 300px;
     width: 100%;
@@ -297,14 +319,37 @@ img {
     height: 300px;
     width: 410px;
     margin: 15px 15px 15px 15px;
-  }
-  .experien{
+}
+.experien{
       display: flex;
-  }
-  .skills {
-    box-sizing: border-box;
-    height: 300px;
-    width: 65%;
-    margin-left: 1%;
+}
+@media screen and (max-width: 980px){
+    .at, .experien, .ed, .contact{
+        flex-direction: column;
+    }
+    .form{
+        height: 400px;
+        width: 90%;
+    }
+    #lname{
+        width: 43%;
+    }
+    .education{
+        height: 720px;
+    }
+    .educat{
+        margin: auto;
+        width: 80%;
+    }
+    iframe{
+        margin: 10%;
+        width: 85%;
+        height: 300vh;
+        border-radius: 10px;
+    }
+    .btn{
+        width: 50%;
+        margin-left: 25%;
+    }
     
-  }
+}
