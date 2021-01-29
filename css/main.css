@@ -1,22 +1,30 @@
 body{
+    background: #3c6382cb;
     font-family: sans-serif;
     padding: 0px;
     margin: 0px;
-    
+    overflow-x: hidden;
 }
-ul{
-    background: #808080;
+.container{
+    position: sticky;
+    top: 0;
+}
+.container ul{
+    background: #0a3d62;
     display: flex;
     margin: 0;
     padding: 0;
     align-items: center;
 }
-ul li{
+.container ul li{
     list-style: none;
     padding: 20px;
 
 }
-ul li a{
+.container ul li a:hover{
+    color: #797c79;
+}
+.container ul li a{
     text-transform: uppercase;
     text-decoration: none;
     color: ivory;
@@ -33,7 +41,7 @@ ul li a{
     background-size: cover;
     flex-direction: column;
 }
-.pro{
+.profile{
     margin-top: 0;
     background-image: url(../image/rin.jpeg);
     background-size: cover;
@@ -44,17 +52,259 @@ ul li a{
     margin-top: -100px;
    
 }
-img{
+.profile img{
     margin-top: 80%;
     border-radius: 60%;
     width: 60%;
     height: 60%;
+}
+h2{
+    margin-left: 30px;
+    color: whitesmoke;
 }
 .par{
     text-align: center;
     padding-top: 10px;
 }
 .par p{
-    color: #ededf8;
+    color: #fcf5f5;
     text-transform: uppercase;
 }
+.par p:hover{
+    color: #be5c5c;
+}
+.about{
+    width: 100%;
+    height: 50%;
+    padding: 17px;
+}
+.at {
+    display: flex;
+    justify-content: space-around;
+}
+.at img{
+    
+    margin-top: 0;
+    height: 300px;
+    margin-left: 20px;
+    border-radius: 20px;
+}
+.at p{
+    background: #60a3bc;
+    color: cornsilk;
+    margin-left: 100px;
+    margin-top: 0px;
+    margin-right: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    height: 280px;   
+
+}
+
+.row{
+    display: flex;
+    
+}
+.column{
+    display: flex;
+    width: 50%;
+}
+.educat{
+    width: 50%;
+    margin-top: 20px;
+}
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+.conten{
+    margin-top: 20px;
+    width: 100%;
+}
+.form{
+    box-sizing: border-box;
+    border: none;
+    width: 50%;
+    height: 60vh;
+    margin-right: 2%;
+}
+
+input[type="text"]{
+    width: 40%;
+    height: 30px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    
+}
+input[type="email"],
+input[type="number"]{
+    width: 88%;
+    height: 30px;
+    margin-bottom: 20px;
+    padding: 10px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 10;
+    border: none;
+}
+input[type="submit"]{
+    width: 30%;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 25px;
+    border: none;
+}
+input[type="submit"]:hover{
+    background: blue;
+    color: wheat;
+}
+
+footer{
+    height: 22vh;
+    margin-bottom: 0;
+    bottom: 0;
+    
+}
+nav .fa{
+    border-radius: 360px;
+    padding: 10px;
+    width: 50%;
+    
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 15vh;
+}
+nav a{
+    padding: 10px;
+}
+.fa-facebook{
+    background: #1966da;
+    color: white;
+}
+.fa-skype{
+    background: #0097e6;
+    color: white;
+}
+.fa-telegram{
+    background: #0097e6;
+    color: white;
+}
+.fa-envelope{
+    background: #629df5;
+    color: white;
+}
+.btn {
+    background: #a7bcf5;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    font-size: 15px;
+    width: 10%;
+    margin-left: 45%;
+  }
+  
+  .btn:hover {
+    background-color: #2a2af3;
+  }
+  .column {
+    float: left;
+    width: 50%;
+  }
+  .h{
+      width: 80%;
+      margin-left: 10%;
+      color: cornsilk;
+  }
+.educat img{
+    width: 97%;
+    height: 300px;
+    margin-top: -5px;
+}
+.ed{
+    display: flex;
+}
+img { 
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+.work-img {
+    float: left;
+    background-color: #b30000;
+    height: auto;
+    width: 50px;
+    margin: 25px 30px 100% 30px;
+    box-sizing: border-box;
+  }
+.job-box{
+    float: left;
+    border: solid;
+    border-width: 0px 0px 3px 0px;
+    box-sizing: border-box;
+    margin: 0px 10px 0px 0px;
+    padding: 10px 10px 10px 10px;
+    width: 200px;
+    height: auto;
+  }
+  
+  .job-box:hover {
+    background-color: gray;
+  }
+  
+  .job-title {
+    font-weight: bold;
+    line-height: 1.5;
+    box-sizing: border-box;
+  }
+  
+  .job-date{
+    color: #b30000;
+    line-height: 1.5;
+    box-sizing: border-box;
+  }
+  
+  
+  .job-description{
+    line-height: 1.5;
+    box-sizing: border-box;
+  }
+  
+  .education {
+    background-color: white;
+    box-sizing: border-box;
+    height: 300px;
+    width: 100%;
+    margin: 15px 15px 15px 15px;
+  }
+  
+  .interest {
+    float: left;
+    box-shadow: 10px 10px 5px grey;
+    background-color: white;
+    box-sizing: border-box;
+    height: 300px;
+    width: 410px;
+    margin: 15px 15px 15px 15px;
+  }
+  .experien{
+      display: flex;
+  }
+  .skills {
+    box-sizing: border-box;
+    height: 300px;
+    width: 65%;
+    margin-left: 1%;
+    
+  }
